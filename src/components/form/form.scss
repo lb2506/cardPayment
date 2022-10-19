@@ -1,0 +1,147 @@
+.form{
+
+    height: 45%;
+    min-height: 400px;
+    width: 40vw;
+    min-width: 410px;
+    max-width: 450px;
+    position: absolute;
+    right: 15vw;
+    top: 30%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(28,7,60);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    &__name{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__number{
+        input{
+            width: 10%;
+            margin-right: 5% ;
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__submit{
+        color: white;
+        background-color: rgb(28,7,60);
+        border: none;
+        border-radius: 5px;
+
+    }
+
+    input, button{
+        height: 40px;
+    }
+
+    input{
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    input::placeholder{
+        font-weight: bold;
+        color: rgb(199, 199, 199);
+    }
+
+    
+}
+
+.bottom{
+
+    &__containerFormDate{
+        width: 50%;
+    }
+
+    &__cvv{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.containerFormDate{
+
+    &__date{
+        input{
+            width: 35%;
+        }
+
+        :first-child{
+            margin-right: 5%;
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+
+    .form{
+        width: 40vw;
+        min-width: 410px;
+        max-width: 450px;
+        right: 10vw;
+    }
+
+}
+
+#validation{
+
+    &__overlay{
+        height: 100vh;
+        min-height: 750px;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        z-index: 10;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.overlay{
+
+    &__popUp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        width: 30%;
+        max-width: 400px;
+        height: 30%;
+        text-align: center;
+        border-radius: 10px;
+    }
+}
+
+.popUp{
+
+    &__img{
+        width: 20%;
+    }
+
+    &__title{
+        font-size: clamp(12px, 2vw, 25px);
+    }
+
+    &__button{
+        background-color: rgb(28,7,60);
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

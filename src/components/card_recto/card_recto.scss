@@ -1,0 +1,78 @@
+.container{  
+    
+    &__cardRecto{
+        width: 30vw;
+        max-width: 800px;
+        border-radius: 15px;
+        height: 17.5vw;
+        max-height: 460px;
+        background: rgb(238,174,202);
+        background: linear-gradient(315deg, rgb(238, 161, 194) 0%, rgb(220, 194, 162) 67%, rgba(81,150,231,1) 100%);
+        position: absolute;
+        top: 10vw;
+        left: 10%;
+        color: white;
+    }
+}
+
+
+.cardRecto{
+
+    &__circles{
+       display: flex;
+       align-items: center;
+       margin: 7.5% 7.5% 15% 7.5%;
+    }
+
+    &__numbers{
+        margin: 7.5% 7.5% 5% 7.5%;
+        display: flex;
+        justify-content: space-between;
+        font-size: clamp(12px, 2vw, 42px);
+    }
+
+    &__bottomInfos{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 7.5%;
+        font-size: clamp(12px, 1.5vw, 35px);
+    }
+}
+
+.circles{
+
+    &__one{
+        display: inline-block;
+        width: 3.5vw;
+        max-width: 40px;
+        height: 3.5vw;
+        max-height: 40px;
+        border-radius: 50px;
+        background-color: white;
+        margin-right: 5%;
+        
+    }
+
+    &__two{
+        display: inline-block;
+        width: 1.75vw;
+        max-width: 20px;
+        height: 1.75vw;
+        max-height: 20px;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+}
+
+.numbers{
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.date{
+
+    &__divider{
+        margin: 0 2px;
+    }
+}

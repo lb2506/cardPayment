@@ -1,0 +1,27 @@
+@import './components/card_recto/card_recto.scss';
+@import './components/card_verso/card_verso.scss';
+@import './components/form/form.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+.App{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+
+  &__leftBackGround{
+    background: rgb(2,0,36);
+    background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 27%, rgba(55,8,75,1) 46%, rgba(18,2,55,1) 65%, rgba(81,3,91,1) 100%);
+    width: calc(100vw / 3);
+    height: 100vh;
+    min-height: 750px;
+  }
+}
